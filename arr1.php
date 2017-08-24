@@ -4,6 +4,11 @@
 
 或者这样处理，压数组前判 断一下年份是否大于2020年，如果大于则不压数组了
 **/
+
+echo strtotime("2009-10-21 16:00:10")."<br>";
+echo strtotime("2009-10-21")."<br>";
+//日期转成时代戳,然后压数组
+
 $a='1103481111';
 $aa=date("Y-m-d",$a);
 echo date("Y-m-d",$a)."<br>";
@@ -17,5 +22,5 @@ for($i=0;$i<200;$i++) {
 	$c=date("Y-m-d",strtotime("+".$i." month",strtotime($aa)));
 	array_push($d,$c);
 }
-var_dump($d);
+//var_dump($d);
 //echo   date("Y-m-d",strtotime("+1 month",strtotime($aa)));

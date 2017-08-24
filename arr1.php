@@ -24,7 +24,8 @@ for($i=0;$i<10;$i++) {
 		array_push($d,$a);
 	}else {
 		$c=date("Y-m-d",strtotime("+".$i." month",strtotime($aa)));
-		array_push($d,$c);
+		$e=strtotime($c);
+		array_push($d,$e);
 	}
 }
 print_r($d);

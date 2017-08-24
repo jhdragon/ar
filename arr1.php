@@ -29,4 +29,9 @@ for($i=0;$i<10;$i++) {
 	}
 }
 print_r($d);
+$d_l=count($d);
+for($x=0;$x<$d_l;$x++) {
+	$cc=date("Y-m-d",$d[$x]);
+	echo $cc."<br>";
+}
 //echo   date("Y-m-d",strtotime("+1 month",strtotime($aa)));

@@ -20,8 +20,12 @@ echo date("Y-m-d",$b)."<br>";
 //echo   date("Y-m-d",strtotime("+1 month",strtotime("2012-02-04")));
 $d=[];
 for($i=0;$i<10;$i++) {
-	$c=date("Y-m-d",strtotime("+".$i." month",strtotime($aa)));
-	array_push($d,$c);
+	if($i==0){
+		array_push($d,$a);
+	}else {
+		$c=date("Y-m-d",strtotime("+".$i." month",strtotime($aa)));
+		array_push($d,$c);
+	}
 }
 print_r($d);
 //echo   date("Y-m-d",strtotime("+1 month",strtotime($aa)));

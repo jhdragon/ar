@@ -19,7 +19,7 @@ echo date("Y-m-d",$b)."<br>";
 //var_dump($date_ar);
 //echo   date("Y-m-d",strtotime("+1 month",strtotime("2012-02-04")));
 $d=[];
-for($i=0;$i<10;$i++) {
+for($i=0;$i<50;$i++) {
 	if($i==0){
 		array_push($d,$a);
 	}else {

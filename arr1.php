@@ -13,7 +13,7 @@
 $a='1490645412';
 //$a='1503646412';
 $aa=date("Y-m-d",$a);
-echo date("Y-m-d",$a)."<br>";
+//echo date("Y-m-d",$a)."<br>";
 $b='1503581974';
 //echo date("Y-m-d",$b)."<br>";
 $current=time();
@@ -24,7 +24,7 @@ $d=['check'=>[],'view'=>[]];
 for($i=0;$i<10;$i++) {
 	if($i==0){
 
-		array_push($d,$a);
+		//array_push($d,$a);
 	}else {
 		$c=date("Y-m-d",strtotime("+".$i." month",strtotime($aa)));
 		

@@ -15,12 +15,13 @@
 
 //$a='1103481111';
 //
-echo strtotime("2017-5-21");
+echo strtotime("2017-7-21");
 //$a='1490645412';
 $a='1490054400';
 //$a='1503646412';
 $aa=date("Y-m-d",$a);
-//echo date("Y-m-d",$a)."<br>";
+
+echo date("Y-m-d",$a)."<br>";
 $b='1503581974';
 //echo date("Y-m-d",$b)."<br>";
 $current=time();
